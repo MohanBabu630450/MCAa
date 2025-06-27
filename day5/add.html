@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add()
+{
+var num1, num2, sum;
+num1=parseInt(document.getElementById("txtFristNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+sum=num1+num2;
+document.getElementById("txtAnswer").value=sum;
+}
+function sub()
+{
+var num1, num2, sub;
+num1=parseInt(document.getElementById("txtFristNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+sub=num1-num2;
+document.getElementById("txtAnswer").value=sub;
+}
+</script></head>
+<body bgcolor=pink>
+<p> FristNumber: <input id="txtFristNumber"></p>
+<p> SecondNumber: <input id="txtSecondNumber"></p>
+<button onclick="add()">add them</button>
+<button onclick="sub()">sub them</button>
+<button onclick="clear()">clear them</button>
+<p> sum=<input id="txtAnswer"></p>
+</body>
+</html>
